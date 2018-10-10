@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/automation-pone.tests.iml" filepath="$PROJECT_DIR$/.idea/modules/automation-pone.tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pone.tests.iml" filepath="$PROJECT_DIR$/.idea/modules/pone.tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/auth/pone.tests-pone.tests.iml" filepath="$PROJECT_DIR$/.idea/modules/auth/pone.tests-pone.tests.iml" group="pone.tests" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/auth/pone.tests-pone.tests_main.iml" filepath="$PROJECT_DIR$/.idea/modules/auth/pone.tests-pone.tests_main.iml" group="pone.tests" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/auth/pone.tests-pone.tests_test.iml" filepath="$PROJECT_DIR$/.idea/modules/auth/pone.tests-pone.tests_test.iml" group="pone.tests" />
+    </modules>
+  </component>
+</project>

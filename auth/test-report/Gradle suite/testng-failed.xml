@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Gradle suite]">
+  <test thread-count="1" verbose="0" name="Gradle test(failed)">
+    <classes>
+      <class name="one.protocol.api.tests.APITests">
+        <methods>
+          <include name="logTestStart"/>
+          <include name="losTestStop"/>
+          <include name="testSocNets"/>
+        </methods>
+      </class> <!-- one.protocol.api.tests.APITests -->
+    </classes>
+  </test> <!-- Gradle test(failed) -->
+</suite> <!-- Failed suite [Gradle suite] -->

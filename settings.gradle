@@ -1,0 +1,4 @@
+rootProject.name = 'pone.tests'
+include 'auth'
+findProject(':auth')?.name = 'pone.tests'
+

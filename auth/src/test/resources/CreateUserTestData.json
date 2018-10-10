@@ -1,0 +1,34 @@
+[
+   {
+     "testName": "createUserPass",
+     "email": "new",
+     "password": "123456",
+     "readEula": true,
+     "code": 200,
+     "responce": null
+  },
+  {
+    "testName": "createUserFailExistingEmail",
+    "email": "test@test.com",
+    "password": "123456",
+    "readEula": true,
+    "code": 400,
+    "responce": "{\"email\":\"User with email \\u0022test@test.com\\u0022 already exist.\"}"
+  },
+  {
+    "testName": "createUserFailShortPassword",
+    "email": "new",
+    "password": "12345",
+    "readEula": true,
+    "code": 400,
+    "responce": "{\"password\":\"Password must contain at least 6 characters.\"}"
+  },
+  {
+    "testName": "createUserFailNoEula",
+    "email": "new",
+    "password": "123456",
+    "readEula": null,
+    "code": 400,
+    "responce": "{\"readEula\":\"You must accept EULA and Privacy Policy to continue.\"}"
+  }
+]
