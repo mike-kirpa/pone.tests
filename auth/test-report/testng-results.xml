@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="SmokeAPITests" duration-ms="3602" started-at="2018-10-10T09:07:31Z" finished-at="2018-10-10T09:07:35Z">
+  <suite name="SmokeAPITests" duration-ms="5509" started-at="2018-10-10T10:46:02Z" finished-at="2018-10-10T10:46:07Z">
     <groups>
     </groups>
-    <test name="APITests" duration-ms="3602" started-at="2018-10-10T09:07:31Z" finished-at="2018-10-10T09:07:35Z">
+    <test name="APITests" duration-ms="5509" started-at="2018-10-10T10:46:02Z" finished-at="2018-10-10T10:46:07Z">
       <class name="one.protocol.api.tests.APITests">
-        <test-method status="PASS" signature="logTestStart(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:one.protocol.api.tests.APITests@6d28f505]" name="logTestStart" is-config="true" duration-ms="8" started-at="2018-10-10T09:07:31Z" finished-at="2018-10-10T09:07:31Z">
+        <test-method status="PASS" signature="logTestStart(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:one.protocol.api.tests.APITests@798123bc]" name="logTestStart" is-config="true" duration-ms="82" started-at="2018-10-10T10:46:02Z" finished-at="2018-10-10T10:46:02Z">
           <params>
             <param index="0">
               <value>
@@ -16,14 +16,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@11081109]]>
+                <![CDATA[[Ljava.lang.Object;@201b1c9d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logTestStart -->
-        <test-method status="PASS" signature="testCreateUser(one.protocol.api.model.User)[pri:0, instance:one.protocol.api.tests.APITests@6d28f505]" name="testCreateUser" duration-ms="2782" started-at="2018-10-10T09:07:31Z" description="Registration tests" data-provider="registrationDataFromJson" finished-at="2018-10-10T09:07:34Z">
+        <test-method status="PASS" signature="testCreateUser(one.protocol.api.model.User)[pri:0, instance:one.protocol.api.tests.APITests@798123bc]" name="testCreateUser" duration-ms="3757" started-at="2018-10-10T10:46:02Z" description="Registration tests" data-provider="registrationDataFromJson" finished-at="2018-10-10T10:46:06Z">
           <params>
             <param index="0">
               <value>
@@ -34,7 +34,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateUser -->
-        <test-method status="PASS" signature="losTestStop(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:one.protocol.api.tests.APITests@6d28f505]" name="losTestStop" is-config="true" duration-ms="1" started-at="2018-10-10T09:07:34Z" finished-at="2018-10-10T09:07:34Z">
+        <test-method status="PASS" signature="losTestStop(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:one.protocol.api.tests.APITests@798123bc]" name="losTestStop" is-config="true" duration-ms="1" started-at="2018-10-10T10:46:06Z" finished-at="2018-10-10T10:46:06Z">
           <params>
             <param index="0">
               <value>
@@ -43,14 +43,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@11081109]]>
+                <![CDATA[[Ljava.lang.Object;@201b1c9d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- losTestStop -->
-        <test-method status="PASS" signature="logTestStart(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:one.protocol.api.tests.APITests@6d28f505]" name="logTestStart" is-config="true" duration-ms="1" started-at="2018-10-10T09:07:34Z" finished-at="2018-10-10T09:07:34Z">
+        <test-method status="PASS" signature="logTestStart(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:one.protocol.api.tests.APITests@798123bc]" name="logTestStart" is-config="true" duration-ms="1" started-at="2018-10-10T10:46:06Z" finished-at="2018-10-10T10:46:06Z">
           <params>
             <param index="0">
               <value>
@@ -59,14 +59,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@13d626bd]]>
+                <![CDATA[[Ljava.lang.Object;@7a131b9d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logTestStart -->
-        <test-method status="PASS" signature="testCreateUser(one.protocol.api.model.User)[pri:0, instance:one.protocol.api.tests.APITests@6d28f505]" name="testCreateUser" duration-ms="161" started-at="2018-10-10T09:07:34Z" description="Registration tests" data-provider="registrationDataFromJson" finished-at="2018-10-10T09:07:34Z">
+        <test-method status="PASS" signature="testCreateUser(one.protocol.api.model.User)[pri:0, instance:one.protocol.api.tests.APITests@798123bc]" name="testCreateUser" duration-ms="159" started-at="2018-10-10T10:46:06Z" description="Registration tests" data-provider="registrationDataFromJson" finished-at="2018-10-10T10:46:07Z">
           <params>
             <param index="0">
               <value>
@@ -77,7 +77,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateUser -->
-        <test-method status="PASS" signature="losTestStop(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:one.protocol.api.tests.APITests@6d28f505]" name="losTestStop" is-config="true" duration-ms="1" started-at="2018-10-10T09:07:34Z" finished-at="2018-10-10T09:07:34Z">
+        <test-method status="PASS" signature="losTestStop(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:one.protocol.api.tests.APITests@798123bc]" name="losTestStop" is-config="true" duration-ms="1" started-at="2018-10-10T10:46:07Z" finished-at="2018-10-10T10:46:07Z">
           <params>
             <param index="0">
               <value>
@@ -86,14 +86,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@13d626bd]]>
+                <![CDATA[[Ljava.lang.Object;@7a131b9d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- losTestStop -->
-        <test-method status="PASS" signature="logTestStart(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:one.protocol.api.tests.APITests@6d28f505]" name="logTestStart" is-config="true" duration-ms="0" started-at="2018-10-10T09:07:34Z" finished-at="2018-10-10T09:07:34Z">
+        <test-method status="PASS" signature="logTestStart(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:one.protocol.api.tests.APITests@798123bc]" name="logTestStart" is-config="true" duration-ms="1" started-at="2018-10-10T10:46:07Z" finished-at="2018-10-10T10:46:07Z">
           <params>
             <param index="0">
               <value>
@@ -102,14 +102,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@76f0cc76]]>
+                <![CDATA[[Ljava.lang.Object;@36818f08]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logTestStart -->
-        <test-method status="PASS" signature="testCreateUser(one.protocol.api.model.User)[pri:0, instance:one.protocol.api.tests.APITests@6d28f505]" name="testCreateUser" duration-ms="157" started-at="2018-10-10T09:07:34Z" description="Registration tests" data-provider="registrationDataFromJson" finished-at="2018-10-10T09:07:34Z">
+        <test-method status="PASS" signature="testCreateUser(one.protocol.api.model.User)[pri:0, instance:one.protocol.api.tests.APITests@798123bc]" name="testCreateUser" duration-ms="156" started-at="2018-10-10T10:46:07Z" description="Registration tests" data-provider="registrationDataFromJson" finished-at="2018-10-10T10:46:07Z">
           <params>
             <param index="0">
               <value>
@@ -120,7 +120,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateUser -->
-        <test-method status="PASS" signature="losTestStop(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:one.protocol.api.tests.APITests@6d28f505]" name="losTestStop" is-config="true" duration-ms="2" started-at="2018-10-10T09:07:34Z" finished-at="2018-10-10T09:07:34Z">
+        <test-method status="PASS" signature="losTestStop(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:one.protocol.api.tests.APITests@798123bc]" name="losTestStop" is-config="true" duration-ms="1" started-at="2018-10-10T10:46:07Z" finished-at="2018-10-10T10:46:07Z">
           <params>
             <param index="0">
               <value>
@@ -129,14 +129,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@76f0cc76]]>
+                <![CDATA[[Ljava.lang.Object;@36818f08]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- losTestStop -->
-        <test-method status="PASS" signature="logTestStart(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:one.protocol.api.tests.APITests@6d28f505]" name="logTestStart" is-config="true" duration-ms="1" started-at="2018-10-10T09:07:34Z" finished-at="2018-10-10T09:07:34Z">
+        <test-method status="PASS" signature="logTestStart(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:one.protocol.api.tests.APITests@798123bc]" name="logTestStart" is-config="true" duration-ms="1" started-at="2018-10-10T10:46:07Z" finished-at="2018-10-10T10:46:07Z">
           <params>
             <param index="0">
               <value>
@@ -145,14 +145,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@2c2698c9]]>
+                <![CDATA[[Ljava.lang.Object;@54b28e61]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logTestStart -->
-        <test-method status="PASS" signature="testCreateUser(one.protocol.api.model.User)[pri:0, instance:one.protocol.api.tests.APITests@6d28f505]" name="testCreateUser" duration-ms="159" started-at="2018-10-10T09:07:34Z" description="Registration tests" data-provider="registrationDataFromJson" finished-at="2018-10-10T09:07:34Z">
+        <test-method status="PASS" signature="testCreateUser(one.protocol.api.model.User)[pri:0, instance:one.protocol.api.tests.APITests@798123bc]" name="testCreateUser" duration-ms="169" started-at="2018-10-10T10:46:07Z" description="Registration tests" data-provider="registrationDataFromJson" finished-at="2018-10-10T10:46:07Z">
           <params>
             <param index="0">
               <value>
@@ -163,7 +163,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateUser -->
-        <test-method status="PASS" signature="losTestStop(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:one.protocol.api.tests.APITests@6d28f505]" name="losTestStop" is-config="true" duration-ms="0" started-at="2018-10-10T09:07:34Z" finished-at="2018-10-10T09:07:34Z">
+        <test-method status="PASS" signature="losTestStop(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:one.protocol.api.tests.APITests@798123bc]" name="losTestStop" is-config="true" duration-ms="1" started-at="2018-10-10T10:46:07Z" finished-at="2018-10-10T10:46:07Z">
           <params>
             <param index="0">
               <value>
@@ -172,14 +172,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@2c2698c9]]>
+                <![CDATA[[Ljava.lang.Object;@54b28e61]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- losTestStop -->
-        <test-method status="PASS" signature="logTestStart(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:one.protocol.api.tests.APITests@6d28f505]" name="logTestStart" is-config="true" duration-ms="1" started-at="2018-10-10T09:07:34Z" finished-at="2018-10-10T09:07:34Z">
+        <test-method status="PASS" signature="logTestStart(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:one.protocol.api.tests.APITests@798123bc]" name="logTestStart" is-config="true" duration-ms="1" started-at="2018-10-10T10:46:07Z" finished-at="2018-10-10T10:46:07Z">
           <params>
             <param index="0">
               <value>
@@ -188,14 +188,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@7d77441d]]>
+                <![CDATA[[Ljava.lang.Object;@2c359f9e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logTestStart -->
-        <test-method status="FAIL" signature="testSocNets()[pri:0, instance:one.protocol.api.tests.APITests@6d28f505]" name="testSocNets" duration-ms="228" started-at="2018-10-10T09:07:34Z" description="list of social networks" finished-at="2018-10-10T09:07:35Z">
+        <test-method status="FAIL" signature="testSocNets()[pri:0, instance:one.protocol.api.tests.APITests@798123bc]" name="testSocNets" duration-ms="292" started-at="2018-10-10T10:46:07Z" description="list of social networks" finished-at="2018-10-10T10:46:07Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [[{"name":"facebook","url":"\/oauth\/connect\/facebook"},{"name":"vkontakte","url":"\/oauth\/connect\/vkontakte"},{"name":"odnoklassniki","url":"\/oauth\/connect\/odnoklassniki"}]] but found [[{"name":"vkontakte","url":"\/oauth\/connect\/vkontakte"}]]]]>
@@ -265,7 +265,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSocNets -->
-        <test-method status="PASS" signature="losTestStop(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:one.protocol.api.tests.APITests@6d28f505]" name="losTestStop" is-config="true" duration-ms="0" started-at="2018-10-10T09:07:35Z" finished-at="2018-10-10T09:07:35Z">
+        <test-method status="PASS" signature="losTestStop(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:one.protocol.api.tests.APITests@798123bc]" name="losTestStop" is-config="true" duration-ms="1" started-at="2018-10-10T10:46:07Z" finished-at="2018-10-10T10:46:07Z">
           <params>
             <param index="0">
               <value>
@@ -274,7 +274,7 @@ at java.lang.Thread.run(Thread.java:748)
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@7d77441d]]>
+                <![CDATA[[Ljava.lang.Object;@2c359f9e]]>
               </value>
             </param>
           </params>
