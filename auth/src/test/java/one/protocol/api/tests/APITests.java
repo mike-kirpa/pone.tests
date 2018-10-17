@@ -34,7 +34,7 @@ public class APITests extends TestBase{
     }
 
     public Iterator<Object[]> readJsonFile(String fileName) throws IOException {
-        try (BufferedReader reader = new BufferedReader(new FileReader(new File(System.getProperty("user.dir") + "/src/test/resources/" + fileName)))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(new File(System.getProperty("user.dir") + "/auth/src/test/resources/" + fileName)))) {
             String json = "";
             String line = reader.readLine();
             while (line != null){
