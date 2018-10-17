@@ -1,0 +1,36 @@
+[
+   {
+     "testName": "authUserPass",
+     "email": "test@test.com",
+     "password": "123456",
+     "captcha": null,
+     "code": 200,
+     "responce": null
+  },
+  {
+    "testName": "authUserFailWrongPassword",
+    "email": "test@test.com",
+    "password": "1234567",
+    "captcha": null,
+    "code": 400,
+    "responce": "{\"message\":\"Invalid username or password\"}"
+  },
+  {
+    "testName": "authUserFailGetCaptcha",
+    "email": "new",
+    "password": null,
+    "captcha": null,
+    "code": 429,
+    "readEula": true,
+    "responce": "{\"message\":\"Captcha invalid\"}"
+  },
+  {
+    "testName": "authUserFailGetTempBlock",
+    "email": "new",
+    "password": null,
+    "captcha": null,
+    "code": 423,
+    "readEula": true,
+    "responce": "{\"message\":\"Authentication temporary blocked for you\"}"
+  }
+]

@@ -2,7 +2,7 @@
    {
      "testName": "createUserPass",
      "email": "new",
-     "password": "123456",
+     "password": null,
      "readEula": true,
      "code": 200,
      "responce": null
@@ -26,7 +26,7 @@
   {
     "testName": "createUserFailNoEula",
     "email": "new",
-    "password": "123456",
+    "password": null,
     "readEula": null,
     "code": 400,
     "responce": "{\"readEula\":\"You must accept EULA and Privacy Policy to continue.\"}"

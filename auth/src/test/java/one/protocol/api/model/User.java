@@ -54,6 +54,9 @@ public class User {
     @SerializedName("responce")
     @Expose
     private String responce;
+    @SerializedName("captcha")
+    @Expose
+    private String captcha;
 
     public Integer getId() {
         return id;
@@ -188,6 +191,14 @@ public class User {
 
     public void setResponce(String responce) {
         this.responce = responce;
+    }
+
+    public String getCaptcha() {
+        return captcha;
+    }
+
+    public void setCaptcha(String captcha) {
+        this.captcha = captcha;
     }
 
 }
