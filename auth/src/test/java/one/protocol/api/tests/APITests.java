@@ -54,7 +54,7 @@ public class APITests extends TestBase{
     @Test(enabled = true, description = "list of social networks")
     public void testSocNets() throws IOException {
         String response = Request
-                .Get(DataProperties.get("base.url") + "/oauth/sources")
+                .Get(DataProperties.get("base.url") + "/oauth/sources/")
                 .execute().returnContent().asString();
         Assert.assertEquals(response, DataProperties.get("socials.networks.response"));
     }
@@ -134,7 +134,7 @@ public class APITests extends TestBase{
                             "password", user.getPassword(),
                             "readEula", user.getReadEula()).
                 when().
-                    post(DataProperties.get("base.url") + "/api/v1/user/create");
+                    post(DataProperties.get("base.url") + "/api/v1/user/create/");
         return response;
     }
 

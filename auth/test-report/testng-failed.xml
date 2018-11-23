@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [SmokeAPITests]">
-  <test thread-count="1" verbose="0" name="APITests(failed)">
+<suite thread-count="1" verbose="0" name="Failed suite [Gradle suite]">
+  <test thread-count="1" verbose="0" name="Gradle test(failed)">
     <classes>
       <class name="one.protocol.api.tests.APITests">
         <methods>
@@ -11,5 +11,5 @@
         </methods>
       </class> <!-- one.protocol.api.tests.APITests -->
     </classes>
-  </test> <!-- APITests(failed) -->
-</suite> <!-- Failed suite [SmokeAPITests] -->
+  </test> <!-- Gradle test(failed) -->
+</suite> <!-- Failed suite [Gradle suite] -->

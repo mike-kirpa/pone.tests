@@ -7,6 +7,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/auth/pone.tests-pone.tests.iml" filepath="$PROJECT_DIR$/.idea/modules/auth/pone.tests-pone.tests.iml" group="pone.tests" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/auth/pone.tests-pone.tests_main.iml" filepath="$PROJECT_DIR$/.idea/modules/auth/pone.tests-pone.tests_main.iml" group="pone.tests" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/auth/pone.tests-pone.tests_test.iml" filepath="$PROJECT_DIR$/.idea/modules/auth/pone.tests-pone.tests_test.iml" group="pone.tests" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pone.tests_main.iml" filepath="$PROJECT_DIR$/.idea/modules/pone.tests_main.iml" group="pone.tests" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pone.tests_test.iml" filepath="$PROJECT_DIR$/.idea/modules/pone.tests_test.iml" group="pone.tests" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/auth/storefront-pone.tests-pone.tests.iml" filepath="$PROJECT_DIR$/.idea/modules/auth/storefront-pone.tests-pone.tests.iml" group="pone.tests" />
     </modules>
   </component>
 </project>

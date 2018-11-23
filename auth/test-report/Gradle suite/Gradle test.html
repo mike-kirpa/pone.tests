@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Gradle test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Oct 10 11:53:05 EEST 2018</td>
+<td>Started on:</td><td>Tue Nov 06 18:54:30 EET 2018</td>
 </tr>
-<tr><td>Total time:</td><td>3 seconds (3365 ms)</td>
+<tr><td>Total time:</td><td>27 seconds (27777 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,21 +76,21 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='one.protocol.api.tests.APITests.testSocNets()'><b>testSocNets</b><br>Test class: one.protocol.api.tests.APITests<br>Test method: list of social networks</td>
-<td><div><pre>java.lang.AssertionError: expected [[{&quot;name&quot;:&quot;facebook&quot;,&quot;url&quot;:&quot;\/oauth\/connect\/facebook&quot;},{&quot;name&quot;:&quot;vkontakte&quot;,&quot;url&quot;:&quot;\/oauth\/connect\/vkontakte&quot;},{&quot;name&quot;:&quot;odnoklassniki&quot;,&quot;url&quot;:&quot;\/oauth\/connect\/odnoklassniki&quot;}]] but found [[{&quot;name&quot;:&quot;vkontakte&quot;,&quot;url&quot;:&quot;\/oauth\/connect\/vkontakte&quot;}]]
-	at one.protocol.api.tests.APITests.testSocNets(APITests.java:45)
+<td><div><pre>org.apache.http.client.HttpResponseException: Not Found
+	at org.apache.http.impl.client.AbstractResponseHandler.handleResponse(AbstractResponseHandler.java:70)
+	at org.apache.http.client.fluent.Response.handleResponse(Response.java:90)
+	at org.apache.http.client.fluent.Response.returnContent(Response.java:97)
+	at one.protocol.api.tests.APITests.testSocNets(APITests.java:58)
 	at com.sun.proxy.$Proxy1.stop(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-... Removed 52 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace488451335", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace488451335'><pre>java.lang.AssertionError: expected [[{&quot;name&quot;:&quot;facebook&quot;,&quot;url&quot;:&quot;\/oauth\/connect\/facebook&quot;},{&quot;name&quot;:&quot;vkontakte&quot;,&quot;url&quot;:&quot;\/oauth\/connect\/vkontakte&quot;},{&quot;name&quot;:&quot;odnoklassniki&quot;,&quot;url&quot;:&quot;\/oauth\/connect\/odnoklassniki&quot;}]] but found [[{&quot;name&quot;:&quot;vkontakte&quot;,&quot;url&quot;:&quot;\/oauth\/connect\/vkontakte&quot;}]]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at one.protocol.api.tests.APITests.testSocNets(APITests.java:45)
+... Removed 46 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1838859339", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1838859339'><pre>org.apache.http.client.HttpResponseException: Not Found
+	at org.apache.http.impl.client.AbstractResponseHandler.handleResponse(AbstractResponseHandler.java:70)
+	at org.apache.http.client.fluent.Response.handleResponse(Response.java:90)
+	at org.apache.http.client.fluent.Response.returnContent(Response.java:97)
+	at one.protocol.api.tests.APITests.testSocNets(APITests.java:58)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -143,7 +143,7 @@ function toggleAllBoxes() {
 	at java.lang.Thread.run(Thread.java:748)
 </pre></div></td>
 <td>0</td>
-<td>one.protocol.api.tests.APITests@66550610</td></tr>
+<td>one.protocol.api.tests.APITests@41cfa8fd</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -153,25 +153,45 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='one.protocol.api.tests.APITests.testAuthUser()'><b>testAuthUser</b><br>Test class: one.protocol.api.tests.APITests<br>Test method: Authentication  tests<br>Parameters: User{testName='authUserPass'}</td>
+<td></td>
+<td>5</td>
+<td>one.protocol.api.tests.APITests@41cfa8fd</td></tr>
+<tr>
+<td title='one.protocol.api.tests.APITests.testAuthUser()'><b>testAuthUser</b><br>Test class: one.protocol.api.tests.APITests<br>Test method: Authentication  tests<br>Parameters: User{testName='authUserFailWrongPassword'}</td>
+<td></td>
+<td>1</td>
+<td>one.protocol.api.tests.APITests@41cfa8fd</td></tr>
+<tr>
+<td title='one.protocol.api.tests.APITests.testAuthUser()'><b>testAuthUser</b><br>Test class: one.protocol.api.tests.APITests<br>Test method: Authentication  tests<br>Parameters: User{testName='authUserFailGetCaptcha'}</td>
+<td></td>
+<td>6</td>
+<td>one.protocol.api.tests.APITests@41cfa8fd</td></tr>
+<tr>
+<td title='one.protocol.api.tests.APITests.testAuthUser()'><b>testAuthUser</b><br>Test class: one.protocol.api.tests.APITests<br>Test method: Authentication  tests<br>Parameters: User{testName='authUserFailGetTempBlock'}</td>
+<td></td>
+<td>11</td>
+<td>one.protocol.api.tests.APITests@41cfa8fd</td></tr>
+<tr>
 <td title='one.protocol.api.tests.APITests.testCreateUser()'><b>testCreateUser</b><br>Test class: one.protocol.api.tests.APITests<br>Test method: Registration tests<br>Parameters: User{testName='createUserPass'}</td>
 <td></td>
-<td>2</td>
-<td>one.protocol.api.tests.APITests@66550610</td></tr>
+<td>0</td>
+<td>one.protocol.api.tests.APITests@41cfa8fd</td></tr>
 <tr>
 <td title='one.protocol.api.tests.APITests.testCreateUser()'><b>testCreateUser</b><br>Test class: one.protocol.api.tests.APITests<br>Test method: Registration tests<br>Parameters: User{testName='createUserFailExistingEmail'}</td>
 <td></td>
 <td>0</td>
-<td>one.protocol.api.tests.APITests@66550610</td></tr>
+<td>one.protocol.api.tests.APITests@41cfa8fd</td></tr>
 <tr>
 <td title='one.protocol.api.tests.APITests.testCreateUser()'><b>testCreateUser</b><br>Test class: one.protocol.api.tests.APITests<br>Test method: Registration tests<br>Parameters: User{testName='createUserFailShortPassword'}</td>
 <td></td>
 <td>0</td>
-<td>one.protocol.api.tests.APITests@66550610</td></tr>
+<td>one.protocol.api.tests.APITests@41cfa8fd</td></tr>
 <tr>
 <td title='one.protocol.api.tests.APITests.testCreateUser()'><b>testCreateUser</b><br>Test class: one.protocol.api.tests.APITests<br>Test method: Registration tests<br>Parameters: User{testName='createUserFailNoEula'}</td>
 <td></td>
 <td>0</td>
-<td>one.protocol.api.tests.APITests@66550610</td></tr>
+<td>one.protocol.api.tests.APITests@41cfa8fd</td></tr>
 </table><p>
 </body>
 </html>
