@@ -15,11 +15,13 @@ public class CaptureScreenshot {
         this.driver = driver;
     }
 
-    public void Screenshot(String browser, Integer width, Integer height) throws IOException {
+    public void Screenshot(String browser, Integer width, Integer height, String mode, String HeaderSelector) throws IOException {
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        WebElement header = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[1]"));
-        js.executeScript("arguments[0].setAttribute('style', 'position: static !important;')",header);
-        Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(2000)).takeScreenshot(driver);
-        ImageIO.write(screenshot.getImage(), "PNG", new File("G:\\" + browser + "_" + width + "_" + height + ".png"));
+        if (HeaderSelector != null) {
+            WebElement HeaderElement = driver.findElement(By.xpath(HeaderSelector));
+            js.executeScript("arguments[0].setAttribute('style', 'position: static !important;')", HeaderElement);
+        }
+        Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
+        ImageIO.write(screenshot.getImage(), "PNG", new File("G:\\" + browser + "_" + width + "_" + height + "_" + mode + ".png"));
     }
 }

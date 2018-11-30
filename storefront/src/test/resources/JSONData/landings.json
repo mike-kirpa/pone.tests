@@ -1,0 +1,14 @@
+[
+  {
+    "LandingUrl" : "http://storefront.eu.gamenet.ru/editor/Landing1",
+    "LandingName" : "Landings1",
+    "ModeView" : "desktop, laptop, mobile",
+    "HeaderSelector" : "//*[@id=\"app\"]/div[1]/div[1]"
+  },
+  {
+    "LandingUrl" : "https://bloodandsoul.ru",
+    "LandingName" : null,
+    "ModeView" : null,
+    "HeaderSelector" : null
+  }
+]

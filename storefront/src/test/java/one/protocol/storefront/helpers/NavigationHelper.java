@@ -7,9 +7,10 @@ import org.openqa.selenium.WebElement;
 
 public class NavigationHelper {
     private WebDriver driver;
-    WebElement ondesktopicon = driver.findElement(By.cssSelector("button.b-menu-platforms__button:nth-child(3)"));
-    WebElement onlaptopicon = driver.findElement(By.cssSelector("button.b-menu-platforms__button:nth-child(2)"));
-    WebElement onmobileicon = driver.findElement(By.cssSelector("button.b-menu-platforms__button:nth-child(1)"));
+    By onDesktopIcon = By.xpath("//*[@tooltip=\"on desktop\"]");
+    By onLaptopIcon = By.xpath("//*[@tooltip=\"on laptop\"]");
+    By onMobileIcon = By.xpath("//*[@tooltip=\"on mobile\"]");
+    By minimizePanelBtn = By.xpath("//*[@title=\"Minimize panel\"]");
 
     public NavigationHelper(WebDriver driver) {
         this.driver = driver;
@@ -19,9 +20,31 @@ public class NavigationHelper {
         driver.findElement(By.xpath("//*[contains(text(),'Landing1')]")).click();
     }
 
-    public void openDesktopEditorPage () {ondesktopicon.click();}
-    public void openLaptopEditorPage () {onlaptopicon.click();}
-    public void openMobileEditorPage () {onmobileicon.click();}
+
+    public void clickOn (By locator) {
+        driver.findElement(locator).click();
+    }
+
+    public void modeSwitcher(String mode) {
+        switch (mode) {
+            case "desktop":
+                clickOn(onDesktopIcon);
+                break;
+            case "laptop":
+                clickOn(onLaptopIcon);
+                break;
+            case "mobile":
+                clickOn(onMobileIcon);
+                break;
+            default:
+                System.out.println("not a viewmode");
+                break;
+        }
+    }
+
+    public void Url(String Url) {
+        driver.get(Url);
+    }
 
     protected boolean isElementPresent(By locator) {
         try {

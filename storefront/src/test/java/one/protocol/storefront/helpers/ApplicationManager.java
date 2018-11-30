@@ -1,22 +1,22 @@
 package one.protocol.storefront.helpers;
 
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.remote.BrowserType;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.file.Paths;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
 
 import static org.testng.Assert.fail;
 
@@ -44,10 +44,10 @@ public class ApplicationManager {
         properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
 
 
-        System.setProperty("webdriver.chrome.driver",getResource("/chromedriver.exe"));
-        System.setProperty("webdriver.gecko.driver",getResource("/geckodriver.exe"));
-        System.setProperty("webdriver.opera.driver",getResource("/operadriver.exe"));
-        System.setProperty("webdriver.edge.driver",getResource("/MicrosoftWebDriver.exe"));
+        System.setProperty("webdriver.chrome.driver",getResource("/webdriver/chromedriver.exe"));
+        System.setProperty("webdriver.gecko.driver",getResource("/webdriver/geckodriver.exe"));
+        System.setProperty("webdriver.opera.driver",getResource("/webdriver/operadriver.exe"));
+        System.setProperty("webdriver.edge.driver",getResource("/webdriver/MicrosoftWebDriver.exe"));
 
         if (browser.equals(BrowserType.CHROME)) {
             driver = new ChromeDriver();
@@ -60,7 +60,7 @@ public class ApplicationManager {
         }
 
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        driver.get(properties.getProperty("web.baseURL"));
+//        driver.get(properties.getProperty("web.baseURL"));
 
         navigationHelper = new NavigationHelper(driver);
         captureScreenshot = new CaptureScreenshot(driver);
@@ -95,4 +95,11 @@ public class ApplicationManager {
     public  CaptureScreenshot takeScreenshot(){
         return captureScreenshot;
     }
+
+    public void startSetParameters(String key) {
+        String value = properties.getProperty(key + ".parameters");
+        ((JavascriptExecutor)driver).executeScript(String.format("window.localStorage.setItem('%s','%s');", key, value));
+        driver.navigate().refresh();
+    }
+
 }
